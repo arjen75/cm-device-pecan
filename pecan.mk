@@ -151,20 +151,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    com.qc.hardware=true \
-    com.qc.hdmi_out=false \
-    debug.sf.hw=1 \
-    debug.enabletr=false \
-    debug.composition.type=ldp \
-    debug.gr.numframebuffers=2 \
-    debug.qctwa.statusbar=1 \
-    debug.qctwa.preservebuf=1 \
-    hwui.render_dirty_regions=false \
-    hwui.disable_vsync=true \
-    hwui.print_config=choice \
-    persist.sys.strictmode.visual=false
-
-PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
     media.stagefright.enable-meta=false \
     media.stagefright.enable-scan=false \
