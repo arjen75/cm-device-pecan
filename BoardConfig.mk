@@ -31,6 +31,10 @@ TARGET_OTA_ASSERT_DEVICE := p350,pecan
 
 # Target information
 TARGET_NO_BOOTLOADER := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+BOARD_HAS_JANKY_BACKBUFFER := true
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_LDPI_RECOVERY := true
 TARGET_NO_RADIOIMAGE := false
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 BOARD_NO_RGBX_8888 := true
@@ -108,11 +112,6 @@ BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 
 #Prepare for new BootAnimation
 TARGET_BOOTANIMATION_NAME := vertical-240x320
-
-#recovery
-BOARD_LDPI_RECOVERY := true
-BOARD_HAS_JANKY_BACKBUFFER := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/pecan/recovery/graphics.c
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/lge/pecan/prebuilt/zImage
