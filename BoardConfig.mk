@@ -15,8 +15,15 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/lge/pecan/include
 
-USE_CAMERA_STUB := false
-BOARD_USE_FROYO_LIBCAMERA := true
+USE_CAMERA_STUB := true
+
+# Camera
+# http://r.cyanogenmod.com/#/c/13317/
+COMMON_GLOBAL_CFLAGS += -DBINDER_COMPAT
+#BOARD_CAMERA_USE_GETBUFFERINFO := true
+#BOARD_USE_CAF_LIBCAMERA := true
+# This is needed by libcamera.so
+BOARD_USE_NASTY_PTHREAD_CREATE_HACK := true
 
 # Arch related defines
 TARGET_BOARD_PLATFORM := msm7k
